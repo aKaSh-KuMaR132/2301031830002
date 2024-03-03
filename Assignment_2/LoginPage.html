@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+</head>
+<style>
+  :hover::placeholder{
+  font-weight: bold;
+  color: whitesmoke;
+  font-variant: hidden;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body{
+  background-image: url(PhotoAndVideo/back.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+.header{
+  color: rgb(179, 183, 183);
+  font-size: 100px;
+}
+.container {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%; 
+  padding-right: 100px;
+  padding-top: 100px;
+  font-family: Arial, sans-serif;
+    
+  }
+  
+  .header {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-image: "back_new.jpg";
+  }
+  
+  .subheader {
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  #sign{
+    color: white; 
+    text-decoration: none;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-image: "back.jpg";
+    padding: 20px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  
+  .input-field {
+    margin-bottom: 10px;
+  }
+  
+  .input-field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-field input {
+    padding: 10px;
+    color: white;
+    border: 0px solid #ccc;
+    border-radius: 0px;
+    width: 250px;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+  }
+  
+  .login-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .social-login {
+    margin-top: 50px;
+  }
+  
+  .social-login a {
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+  }
+  .nobordr{
+    border: 2px solid red;
+
+  }
+  .login-section {
+    text-align: center;
+}
+
+.social-media-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px; 
+}
+
+.social-icon img {
+    width: 40px; 
+    height: 40px;
+}
+</style>
+<body>
+<h1 class="header" style="font-size: xx-large;">VIRTUAL VISIONS</h1>
+<div class="subheader">New User? <a href="newUserPage.html" id="sign">Sign Up</a></div>
+<div class="container">
+ <div class="form-container">
+    <h2 style="color: white; margin-bottom: 5px;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Welcome Back!</h2>
+    <p style="color: white;margin-top: 5px">Login to continue</p>
+    <div class="input-field">
+      <label for="username"></label>
+      <input type="text" placeholder="Username" name="username" required>
+    </div>
+    <div class="input-field">
+      <label for="password"></label>
+      <input type="password" placeholder="Password" name="password" required>
+    </div>
+    <button class="login-button">Log In</button>
+    <div class="login-section">
+      <p style="color: white;">Log in with:</p>
+      <div class="social-media-icons">
+          <a href="#" class="social-icon"><img src="PhotoAndVideo\google_logo.png" alt="Google"></a>
+          <a href="#" class="social-icon"><img src="PhotoAndVideo\facebook_logo.png" alt="Facebook"></a>
+          <a href="#" class="social-icon"><img src="PhotoAndVideo\twitter_logo.png" alt="Twitter"></a>
+      </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

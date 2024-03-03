@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New User Page</title>
+    
+</head>
+<style>
+    ::placeholder{
+    font-weight: bold;
+    color: rgb(223, 245, 244);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+  }
+  body{
+    background-image: url(PhotoAndVideo/back.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+  
+  }
+  .header{
+    color: rgb(179, 183, 183);
+    font-size: 100px;
+  }
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%; 
+    padding-right: 100px;
+    padding-top: 100px;
+    font-family: Arial, sans-serif;
+      
+    }
+    
+    .header {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      background-image: "back_new.jpg";
+    }
+    
+    .subheader {
+      font-size: 20px;
+      margin-bottom: 10px;
+      position: absolute;
+      top: 10px; 
+      right: 10px;
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #sign{
+      color: white; 
+      text-decoration: none;
+    }
+    
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      background-image: "back.jpg";
+      padding: 20px;
+      border-radius: 5px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      
+    }
+    
+    .input-field {
+      margin-bottom: 10px;
+    }
+    
+    .input-field label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    
+    .input-field input {
+      padding: 10px;
+      color: white;
+      border: 0px solid #ccc;
+      border-radius: 0px;
+      width: 250px;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid white;
+    }
+    
+    .login-button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .social-login {
+      margin-top: 50px;
+    }
+    
+    .social-login a {
+      text-decoration: none;
+      color: #000;
+      margin-right: 10px;
+    }
+    .nobordr{
+      border: 2px solid red;
+  
+    }
+    .login-section {
+      text-align: center;
+  }
+  
+  .social-media-icons {
+      margin-top: 10px;
+  }
+  
+  .social-icon {
+      display: inline-block;
+      margin: 0 10px; 
+  }
+  
+  .social-icon img {
+      width: 40px; 
+      height: 40px;
+  }
+  .button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+</style>
+
+<body>
+    <h1 class="header">VIRTUAL VISIONS</h1>
+    <div class="container">
+        
+        <form action="#" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;">
+            <h2 style="color: white;">Enter Your Details</h2>
+            <div class="input-field">
+
+                <input type="text" id="fullName" name="fullName" placeholder="Full Name" required>
+            </div>
+            <div class="input-field">
+                
+                <input type="tel" id="mobileNo" name="mobileNo" placeholder="Mobile No." required>
+            </div>
+            <div class="input-field">
+                
+                <input type="email" id="emailId" name="emailId" placeholder="E-Mail ID" required>
+            </div>
+            <div class="input-field password-field">
+                
+                <input type="password" id="password" name="password" placeholder="Input Password" required>
+                <i class="show-password fas fa-eye"></i>
+            </div>
+            <div class="input-field password-field">
+                
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
+                <i class="show-password fas fa-eye"></i>
+            </div>
+            <button type="submit" class="button">Save & Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
